@@ -1052,7 +1052,7 @@
 				events.forEach(function (ev) {
 					// 			console.log('Dispatching: ', ev.type);
 					//document.elementFromPoint(ev.clientX, ev.clientY).dispatchEvent(ev);
-					document.html.dispatchEvent(ev);
+					document.documentElement.dispatchEvent(ev);
 				});
 
 				/// Build *ONE* `TouchEvent` with `TouchList`s built with

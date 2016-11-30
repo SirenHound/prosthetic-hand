@@ -1247,4 +1247,4 @@
 	return Hand;
 
 }));
-//# sourceMappingURL=prosthetic-hand.js.map
+// sourceMappingURL=prosthetic-hand.js.map

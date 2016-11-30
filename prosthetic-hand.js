@@ -1051,7 +1051,8 @@
 				// Fire all `MouseEvent`s and `PointerEvent`s
 				events.forEach(function (ev) {
 					// 			console.log('Dispatching: ', ev.type);
-					document.elementFromPoint(ev.clientX, ev.clientY).dispatchEvent(ev);
+					//document.elementFromPoint(ev.clientX, ev.clientY).dispatchEvent(ev);
+					document.html.dispatchEvent(ev);
 				});
 
 				/// Build *ONE* `TouchEvent` with `TouchList`s built with

@@ -269,7 +269,8 @@ export default class Hand {
 		// Fire all `MouseEvent`s and `PointerEvent`s
 		events.forEach( ev => {
 // 			console.log('Dispatching: ', ev.type);
-			document.elementFromPoint(ev.clientX, ev.clientY).dispatchEvent(ev);
+			var elem = document.elementFromPoint(ev.clientX, ev.clientY);
+			if (elem) elem.dispatchEvent(ev);
 		});
 
 

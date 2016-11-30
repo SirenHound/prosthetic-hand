@@ -1103,7 +1103,8 @@
 								// Apparently dispatching a touch event to the target of a touch
 								// will not work.
 								// 				touchTarget = touches[0].target;
-								touchTarget = document.elementFromPoint(touches[0].clientX, touches[0].clientY);
+								//touchTarget = document.elementFromPoint(touches[0].clientX, touches[0].clientY);
+							touchTarget = document;
 
 								touchEvent = this._createTouchEvent("touchmove", {
 									cancelable: true,
